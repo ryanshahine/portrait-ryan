@@ -1,0 +1,26 @@
+{
+  "name": "portrait-ryan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent static export of portrait.so/ryan",
+  "type": "module",
+  "scripts": {
+    "build": "portrait-migration prepare && portrait-migration build ryan",
+    "deploy": "wrangler deploy"
+  },
+  "portrait": {
+    "username": "ryan"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "portrait-migration": "github:portraitgg/portrait-migration#main"
+  },
+  "devDependencies": {
+    "wrangler": "4.121.0"
+  },
+  "overrides": {
+    "postcss": "8.5.26"
+  }
+}
